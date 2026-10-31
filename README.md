@@ -6,6 +6,39 @@ rules, and shows everything on a live Streamlit dashboard with exportable report
 
 > **Educational and defensive only.** Capture and test only on your own machine/lab network.
 
+## Screenshots
+
+Captured on a Kali Linux VM: ~138K real packets (460 MB), with port-scan, SSH brute-force and traffic-spike attacks generated against the machine itself.
+
+**Dashboard - overview** (packets/sec, bandwidth, traffic direction, top ports)
+
+![Dashboard overview](screenshots/04_dashboard_overview.png)
+
+**Dashboard - alerts** (alerts by type, timeline and full alert log)
+
+![Dashboard alerts](screenshots/05_dashboard_alerts.png)
+
+**Detector catching attacks in real time** (`detector.py --watch`)
+
+![Detector alerts](screenshots/02_detector_alerts.png)
+
+| Protocols | Devices |
+|---|---|
+| ![Protocols](screenshots/06_dashboard_protocols.png) | ![Devices](screenshots/07_dashboard_devices.png) |
+
+<details>
+<summary>More screenshots: capture, test traffic, live connections, raw packets, HTML report</summary>
+
+![Packet capture](screenshots/01_packet_capture.png)
+![Test traffic commands](screenshots/03_test_traffic_commands.png)
+![Live connections](screenshots/08_dashboard_live_connections.png)
+![Raw packets](screenshots/09_dashboard_raw_packets.png)
+![Report - summary charts](screenshots/10_report_summary_charts.png)
+![Report - top talkers](screenshots/11_report_top_talkers.png)
+![Report - alert log](screenshots/12_report_alert_log.png)
+
+</details>
+
 ## Architecture
 
 ```
